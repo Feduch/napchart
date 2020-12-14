@@ -4,12 +4,12 @@
     "dev": "webpack --watch",
     "build:prod": "NODE_ENV=production webpack",
     "standardfix": "standard --fix",
-    "version": "npm run build:prod && git add dist/napchart.min.js",
-    "postversion": "git push && git push --tags && npm publish"
+    "version": "npm run build:prod && git add dist/napchart.min.js dist/napchart.min.js.map",
+    "postversion": "git push && git push --tags"
   },
   "main": "lib/index.js",
   "name": "napchart",
-  "version": "3.0.11",
+  "version": "3.0.12",
   "description": "HTML5 Canvas time-planning library",
   "devDependencies": {
     "buble": "^0.18.0",
